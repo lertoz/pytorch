@@ -1821,7 +1821,7 @@ class _TestTorchMixin(object):
             if device == 'cpu':
                 a1 = torch.tensor([1, 2], dtype=torch.bfloat16, device=device)
                 a2 = torch.tensor([3, 4], dtype=torch.bfloat16, device=device)
-                self.assertEqual(a1 * a2, torch.tensor([3, 6], dtype=torch.bfloat16, device=device))
+                self.assertEqual(a1 * a2, torch.tensor([3, 8], dtype=torch.bfloat16, device=device))
 
     def test_div(self):
         m1 = torch.randn(10, 10)
